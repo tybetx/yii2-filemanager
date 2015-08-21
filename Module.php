@@ -27,12 +27,6 @@ class Module extends \yii\base\Module
     ];
 
     /**
-     *  Set true if you want to rename files if the name is already in use
-     * @var bolean
-     */
-    public $rename = false;
-
-    /**
      * @var array client options for dosamigos\fileupload\FileUploadUI
      */
     public $uploadClientOptions = [
