@@ -2,6 +2,7 @@
 
 return [
     'Title' => 'Tytuł',
+    'Filename' => 'Nazwa pliku',
     'Type' => 'Typ',
     'Url' => 'Url',
     'Alt' => 'alt',
@@ -29,4 +30,6 @@ return [
     'Changes not saved.' => 'Zmiany nie zostały zapisane.',
     'Changes saved!' => 'Zapisano zmiany!',
     'Select image size' => 'Wybierz rozmiar obrazu',
+    'Search' => 'Szukaj',
+    'Search files' => 'Szukaj plików',
 ];

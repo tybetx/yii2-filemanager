@@ -8,6 +8,7 @@ use yii\web\Response;
 use yii\filters\VerbFilter;
 use pendalf89\filemanager\Module;
 use pendalf89\filemanager\models\Mediafile;
+use pendalf89\filemanager\models\MediafileSearch;
 use pendalf89\filemanager\assets\FilemanagerAsset;
 use yii\helpers\Url;
 
@@ -45,12 +46,13 @@ class FileController extends Controller
     public function actionFilemanager()
     {
         $this->layout = '@vendor/pendalf89/yii2-filemanager/views/layouts/main';
-        $model = new Mediafile();
-        $dataProvider = $model->search();
+        $searchModel = new MediafileSearch();
+        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
         $dataProvider->pagination->defaultPageSize = 15;
+        $dataProvider->sort->defaultOrder = ['created_at'=>SORT_DESC];
 
         return $this->render('filemanager', [
-            'model' => $model,
+            'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
         ]);
     }

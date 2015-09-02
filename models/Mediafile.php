@@ -64,7 +64,7 @@ class Mediafile extends ActiveRecord
     {
         return [
             'id' => Module::t('main', 'ID'),
-            'filename' => Module::t('main', 'filename'),
+            'filename' => Module::t('main', 'Filename'),
             'type' => Module::t('main', 'Type'),
             'url' => Module::t('main', 'Url'),
             'alt' => Module::t('main', 'Alt attribute'),
@@ -394,20 +394,6 @@ class Mediafile extends ActiveRecord
         return unlink("$basePath/{$this->url}");
     }
 
-    /**
-     * Creates data provider instance with search query applied
-     * @return ActiveDataProvider
-     */
-    public function search()
-    {
-        $query = self::find()->orderBy('created_at DESC');
-
-        $dataProvider = new ActiveDataProvider([
-            'query' => $query,
-        ]);
-
-        return $dataProvider;
-    }
 
     /**
      * @return int last changes timestamp

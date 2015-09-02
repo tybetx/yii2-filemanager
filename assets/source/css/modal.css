@@ -1,15 +1,23 @@
 /*------------------------------------*\
     #MODAL
 \*------------------------------------*/
+/* line 4, /mnt/rk1/projects/github.com/tybetx/yii2-filemanager/assets/source/css/modal.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/mnt\/rk1\/projects\/github\.com\/tybetx\/yii2-filemanager\/assets\/source\/css\/modal\.less}line{font-family:\000034}}
 [role="filemanager-modal"] {
   z-index: 70000;
 }
+/* line 7, /mnt/rk1/projects/github.com/tybetx/yii2-filemanager/assets/source/css/modal.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/mnt\/rk1\/projects\/github\.com\/tybetx\/yii2-filemanager\/assets\/source\/css\/modal\.less}line{font-family:\000037}}
 [role="filemanager-modal"] .modal-title {
   font-size: 1.2em;
 }
+/* line 11, /mnt/rk1/projects/github.com/tybetx/yii2-filemanager/assets/source/css/modal.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/mnt\/rk1\/projects\/github\.com\/tybetx\/yii2-filemanager\/assets\/source\/css\/modal\.less}line{font-family:\0000311}}
 [role="filemanager-modal"] .modal-dialog {
   width: 1000px;
 }
+/* line 15, /mnt/rk1/projects/github.com/tybetx/yii2-filemanager/assets/source/css/modal.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/mnt\/rk1\/projects\/github\.com\/tybetx\/yii2-filemanager\/assets\/source\/css\/modal\.less}line{font-family:\0000315}}
 [role="filemanager-modal"] .modal-body {
   padding-top: 8px;
   padding-bottom: 8px;
@@ -17,6 +25,8 @@
 /*------------------------------------*\
     #IFRAME
 \*------------------------------------*/
+/* line 28, /mnt/rk1/projects/github.com/tybetx/yii2-filemanager/assets/source/css/modal.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/mnt\/rk1\/projects\/github\.com\/tybetx\/yii2-filemanager\/assets\/source\/css\/modal\.less}line{font-family:\0000328}}
 [role="filemanager-frame"] {
   width: 100%;
   height: 484px;
@@ -24,6 +34,8 @@
 /*------------------------------------*\
     #TINYMCE
 \*------------------------------------*/
+/* line 40, /mnt/rk1/projects/github.com/tybetx/yii2-filemanager/assets/source/css/modal.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/mnt\/rk1\/projects\/github\.com\/tybetx\/yii2-filemanager\/assets\/source\/css\/modal\.less}line{font-family:\0000340}}
 div.mce-edit-area {
   border-right-width: 1px!important;
 }

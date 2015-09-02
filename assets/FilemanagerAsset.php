@@ -15,6 +15,7 @@ class FilemanagerAsset extends AssetBundle
     ];
     public $depends = [
         'yii\bootstrap\BootstrapAsset',
+        'yii\bootstrap\BootstrapPluginAsset',
         'yii\web\JqueryAsset',
     ];
 }

@@ -116,6 +116,17 @@
   max-width: 100%;
 }
 /*------------------------------------*\
+    #search-collapse
+\*------------------------------------*/
+#search-collapse #search-form .form-group {
+  margin-bottom: 0;
+}
+#search-collapse #search-form .control-label {
+  margin-bottom: 0;
+  font-size: .9em;
+  font-weight: bold;
+}
+/*------------------------------------*\
     #SPIN ICONS
 \*------------------------------------*/
 .spin {
@@ -127,6 +138,7 @@
   transform-origin: 50% 50%;
   -ms-transform-origin: 50% 50%;
   /* IE 9 */
+
 }
 @-moz-keyframes spin {
   from {

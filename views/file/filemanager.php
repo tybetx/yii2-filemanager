@@ -5,6 +5,7 @@ use pendalf89\filemanager\Module;
 use yii\widgets\ListView;
 use yii\helpers\Html;
 use yii\helpers\Url;
+use yii\bootstrap\Collapse;
 
 /* @var $this yii\web\View */
 /* @var $searchModel pendalf89\filemanager\models\Mediafile */
@@ -30,8 +31,18 @@ $this->params['moduleBundle'] = FilemanagerAsset::register($this);
     ]) ?>
 
     <div class="dashboard">
-        <p><?= Html::a('<span class="glyphicon glyphicon-upload"></span> ' . Module::t('main', 'Upload manager'),
-                ['file/uploadmanager'], ['class' => 'btn btn-default']) ?></p>
+        <p>
+            <?= Html::a('<span class="glyphicon glyphicon-upload"></span> ' . Module::t('main', 'Upload manager'),
+                ['file/uploadmanager'], ['class' => 'btn btn-default']) ?>
+
+            <?= Html::a('<span class="glyphicon glyphicon-search"></span> ' . Module::t('main', 'Search files'),
+                '#search-collapse', ['class' => 'btn btn-default','data'=>['toggle'=>'collapse']]) ?>
+        </p>
+        <div class="collapse" id="search-collapse">
+            <div class="well well-sm">
+              <?= $this->render('_search', ['model' => $searchModel]) ?>
+            </div>
+        </div>
         <div id="fileinfo">
 
         </div>
