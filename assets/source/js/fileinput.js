@@ -67,7 +67,7 @@ $(document).ready(function() {
         });
     }
 
-    $('[role="filemanager-launch"]').on("click", function(e) {
+    $(document).on("click", '[role="filemanager-launch"]', function(e) {
         e.preventDefault();
 
         var modal = $('[data-btn-id="' + $(this).attr("id") + '"]'),
@@ -79,7 +79,7 @@ $(document).ready(function() {
         modal.modal("show");
     });
 
-    $('[role="clear-input"]').on("click", function(e) {
+    $(document).on("click", '[role="clear-input"]', function(e) {
         e.preventDefault();
 
         $("#" + $(this).attr("data-clear-element-id")).val("");
